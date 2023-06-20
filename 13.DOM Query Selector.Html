@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p class="red">This paragraph's text color will change to red.</p>
+  <p>This paragraph's text color will not change.</p>
+  <p class="red">This paragraph's text color will also change to red.</p>
+
+  <script>
+    const paragraphs = document.querySelectorAll("p.red");
+
+    paragraphs.forEach(paragraph => {
+      paragraph.style.color = "red";
+    });
+  </script>
+</body>
+</html>
