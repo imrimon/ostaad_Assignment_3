@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <img id="myImage" src="image1.jpg" width="200" height="200">
+  <button id="myButton">Change Image</button>
+
+  <script>
+    const image = document.getElementById("myImage");
+    const button = document.getElementById("myButton");
+
+    button.addEventListener("click", () => {
+      image.src = "image2.jpg";
+    });
+  </script>
+</body>
+</html>
