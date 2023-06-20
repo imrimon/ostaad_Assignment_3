@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button id="myButton">Click Me</button>
+  <p id="myParagraph">This paragraph's background color will change when the button is clicked.</p>
+
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const paragraph = document.getElementById("myParagraph");
+
+    button.addEventListener("click", () => {
+      paragraph.classList.add("highlight");
+    });
+  </script>
+</body>
+</html>
