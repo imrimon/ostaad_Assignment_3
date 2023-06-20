@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Ostaad Assignment</title>
+    </head>
+    <body>
+        <script>
+                
+
+                // 2(a)
+                function squareRootOfSumOfSquares(numbers) {
+                const sumOfSquares = numbers.reduce((sum, num) => sum + (num * num), 0);
+                const squareRoot = Math.sqrt(sumOfSquares);
+                return squareRoot;
+                }
+
+                // 2(b)
+                const numbers = [1, 2, 3, 4, 5];
+                const result = squareRootOfSumOfSquares(numbers);
+                console.log("Square root of sum of squares:", result);
+
+
+                
+        </script>
+    </body>
+</html>
