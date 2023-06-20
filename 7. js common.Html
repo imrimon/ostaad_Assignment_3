@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <img id="myImage" src="image1.jpg" width="400" height="400">
+
+  <script>
+    // a
+    document.addEventListener("click", event => {
+      const x = event.clientX;
+      const y = event.clientY;
+      alert(`Clicked at coordinates: (${x}, ${y})`);
+    });
+
+    // b
+    document.addEventListener("keydown", event => {
+      const keyCode = event.keyCode;
+      alert(`Key pressed. Key code: ${keyCode}`);
+    });
+
+    // c
+    const image = document.getElementById("myImage");
+    image.addEventListener("mouseover", () => {
+      image.src = "image2.jpg";
+    });
+    image.addEventListener("mouseout", () => {
+      image.src = "image1.jpg";
+    });
+  </script>
+</body>
+</html>
