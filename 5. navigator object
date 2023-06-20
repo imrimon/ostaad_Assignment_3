@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Ostaad Assignment</title>
+    </head>
+    <body>
+        <script>
+                
+
+                // 5(a)
+                function getBrowserInfo() {
+                const browserName = navigator.appName;
+                const browserVersion = navigator.appVersion;
+                return `Browser: ${browserName}, Version: ${browserVersion}`;
+                }
+
+                // 5(b)
+                const browserInfo = getBrowserInfo();
+                console.log(browserInfo);
+
+                
+        </script>
+    </body>
+</html>
